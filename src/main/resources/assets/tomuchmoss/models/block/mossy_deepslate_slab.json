@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "tomuchmoss:block/mossy_deepslate",
+    "top": "tomuchmoss:block/mossy_deepslate",
+    "side": "tomuchmoss:block/mossy_deepslate"
+  }
+}

@@ -3,11 +3,8 @@ package net.manmaed.tomuchmoss.blocks;
 import net.manmaed.tomuchmoss.ToMuchMoss;
 import net.manmaed.tomuchmoss.items.TMMItems;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
@@ -33,4 +30,16 @@ public class TMMBlocks {
     public static final RegistryObject<Item> COBBLED_MOSSY_DEEPSLATE_ITEM = TMMItems.ITEMS.register("cobbled_mossy_deepslate", () -> new BlockItem(COBBLED_MOSSY_DEEPSLATE.get(), new Item.Properties().tab(ToMuchMoss.TAB)));
 
 
+    //Other Things
+    public static final RegistryObject<Block> MOSSY_DEEPSLATE_SLAB = BLOCKS.register("mossy_deepslate_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(MOSSY_DEEPSLATE.get())));
+    public static final RegistryObject<Block> MOSSY_DEEPSLATE_STAIR = BLOCKS.register("mossy_deepslate_stair", () -> new StairBlock(MOSSY_DEEPSLATE.get().defaultBlockState(), BlockBehaviour.Properties.copy(MOSSY_DEEPSLATE.get())));
+
+
+    //BlockItems
+    public static final RegistryObject<Item> MOSSY_DEEPSLATE_SLAB_ITEM = TMMItems.ITEMS.register("mossy_deepslate_slab", () -> makeBlockItem(MOSSY_DEEPSLATE_SLAB.get()));
+    public static final RegistryObject<Item> MOSSY_DEEPSLATE_STAIR_ITEM = TMMItems.ITEMS.register("mossy_deepslate_stair", () -> makeBlockItem(MOSSY_DEEPSLATE_STAIR.get()));
+
+    public static BlockItem makeBlockItem(Block block) {
+        return new BlockItem(block, new Item.Properties().tab(ToMuchMoss.TAB));
+    }
 }

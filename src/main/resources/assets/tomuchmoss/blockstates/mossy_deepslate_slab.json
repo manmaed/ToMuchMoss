@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tomuchmoss:block/mossy_deepslate_slab"
+    },
+    "type=double": {
+      "model": "tomuchmoss:block/mossy_deepslate"
+    },
+    "type=top": {
+      "model": "tomuchmoss:block/mossy_deepslate_slab_top"
+    }
+  }
+}
