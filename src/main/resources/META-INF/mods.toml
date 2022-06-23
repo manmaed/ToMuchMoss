@@ -12,8 +12,7 @@ logoFile="tmm_logo.png"
 credits="Ryd for the Moss" 
 authors="manmaed" 
 description='''
-Adds more moss coverd blocks
-'''
+Adds more moss coverd blocks'''
 [[dependencies.tomuchmoss]]
 modId="forge"
 mandatory=true
