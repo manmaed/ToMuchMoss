@@ -1,0 +1,22 @@
+modLoader="javafml" 
+loaderVersion="[41,)" 
+license="All rights reserved"
+issueTrackerURL="https://github.com/manmaed/ToMuchMoss/issues" 
+[[mods]] 
+modId="tomuchmoss" 
+version="${file.jarVersion}" 
+displayName="To Much Moss" 
+updateJSONURL="https://raw.githubusercontent.com/manmaed/ToMuchMoss/main/update.json" 
+displayURL="https://www.curseforge.com/minecraft/mc-mods/to-much-moss" 
+logoFile="tmm_logo.png" 
+credits="Ryd for the Moss" 
+authors="manmaed" 
+description='''
+Adds more moss coverd blocks
+'''
+[[dependencies.tomuchmoss]]
+modId="forge"
+mandatory=true
+versionRange="[41.0.38,)"
+ordering="NONE"
+side="BOTH"
