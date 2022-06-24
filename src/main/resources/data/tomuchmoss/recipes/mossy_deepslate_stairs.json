@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m  ",
+    "mm ",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "tomuchmoss:mossy_deepslate"
+    }
+  },
+  "result": {
+    "item": "tomuchmoss:mosst_deepslate_stairs",
+    "count": 4
+  }
+}

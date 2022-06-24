@@ -1,0 +1,9 @@
+{
+  "parent": "tomuchmoss:block/mossy_deepslate_stairs",
+  "display": {
+    "gui": {
+      "rotation": [30, 135, 0],
+      "scale": [0.62, 0.62, 0.62]
+    }
+  }
+}

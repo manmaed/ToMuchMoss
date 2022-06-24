@@ -1,8 +1,25 @@
 {
-  "parent": "block/slab_top",
+  "parent": "block/block",
+  "loader": "forge:multi-layer",
+  "layers": {
+    "solid": {
+      "parent": "block/slab_top",
+      "textures": {
+        "bottom": "block/deepslate",
+        "top": "block/deepslate",
+        "side": "block/deepslate"
+      }
+    },
+    "translucent": {
+      "parent": "block/slab_top",
+      "textures": {
+        "bottom": "tomuchmoss:block/moss",
+        "top": "tomuchmoss:block/moss",
+        "side": "tomuchmoss:block/moss"
+      }
+    }
+  },
   "textures": {
-    "bottom": "tomuchmoss:block/mossy_deepslate",
-    "top": "tomuchmoss:block/mossy_deepslate",
-    "side": "tomuchmoss:block/mossy_deepslate"
+    "particle" : "block/deepslate"
   }
 }

@@ -24,22 +24,21 @@ public class TMMBlocks {
      **/
 
     public static final RegistryObject<Block> MOSSY_DEEPSLATE = BLOCKS.register("mossy_deepslate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).color(MaterialColor.DEEPSLATE).strength(3F, 6F).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Item> MOSSY_DEEPSLATE_ITEM = TMMItems.ITEMS.register("mossy_deepslate", () -> new BlockItem(MOSSY_DEEPSLATE.get(), new Item.Properties().tab(ToMuchMoss.TAB)));
-
     public static final RegistryObject<Block> COBBLED_MOSSY_DEEPSLATE = BLOCKS.register("cobbled_mossy_deepslate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).color(MaterialColor.DEEPSLATE).strength(3.5F, 6F).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Item> COBBLED_MOSSY_DEEPSLATE_ITEM = TMMItems.ITEMS.register("cobbled_mossy_deepslate", () -> new BlockItem(COBBLED_MOSSY_DEEPSLATE.get(), new Item.Properties().tab(ToMuchMoss.TAB)));
-
 
     //Other Things
     public static final RegistryObject<Block> MOSSY_DEEPSLATE_SLAB = BLOCKS.register("mossy_deepslate_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(MOSSY_DEEPSLATE.get())));
-    public static final RegistryObject<Block> MOSSY_DEEPSLATE_STAIR = BLOCKS.register("mossy_deepslate_stair", () -> new StairBlock(MOSSY_DEEPSLATE.get().defaultBlockState(), BlockBehaviour.Properties.copy(MOSSY_DEEPSLATE.get())));
-
+    public static final RegistryObject<Block> MOSSY_DEEPSLATE_STAIR = BLOCKS.register("mossy_deepslate_stairs", () -> new StairBlock(MOSSY_DEEPSLATE.get().defaultBlockState(), BlockBehaviour.Properties.copy(MOSSY_DEEPSLATE.get())));
+    public static final RegistryObject<Block> MOSSY_DEEPSLATE_WALL = BLOCKS.register("mossy_deepslate_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(MOSSY_DEEPSLATE.get())));
 
     //BlockItems
-    public static final RegistryObject<Item> MOSSY_DEEPSLATE_SLAB_ITEM = TMMItems.ITEMS.register("mossy_deepslate_slab", () -> makeBlockItem(MOSSY_DEEPSLATE_SLAB.get()));
-    public static final RegistryObject<Item> MOSSY_DEEPSLATE_STAIR_ITEM = TMMItems.ITEMS.register("mossy_deepslate_stair", () -> makeBlockItem(MOSSY_DEEPSLATE_STAIR.get()));
+    private static final RegistryObject<Item> MOSSY_DEEPSLATE_ITEM = TMMItems.ITEMS.register("mossy_deepslate", () -> makeBlockItem(MOSSY_DEEPSLATE.get()));
+    private static final RegistryObject<Item> COBBLED_MOSSY_DEEPSLATE_ITEM = TMMItems.ITEMS.register("cobbled_mossy_deepslate", () ->makeBlockItem(COBBLED_MOSSY_DEEPSLATE.get()));
+    private static final RegistryObject<Item> MOSSY_DEEPSLATE_SLAB_ITEM = TMMItems.ITEMS.register("mossy_deepslate_slab", () -> makeBlockItem(MOSSY_DEEPSLATE_SLAB.get()));
+    private static final RegistryObject<Item> MOSSY_DEEPSLATE_STAIR_ITEM = TMMItems.ITEMS.register("mossy_deepslate_stairs", () -> makeBlockItem(MOSSY_DEEPSLATE_STAIR.get()));
+    private static final RegistryObject<Item> MOSSY_DEEPSLATE_WALL_ITEM = TMMItems.ITEMS.register("mossy_deepslate_wall", () -> makeBlockItem(MOSSY_DEEPSLATE_WALL.get()));
 
-    public static BlockItem makeBlockItem(Block block) {
+    private static BlockItem makeBlockItem(Block block) {
         return new BlockItem(block, new Item.Properties().tab(ToMuchMoss.TAB));
     }
 }

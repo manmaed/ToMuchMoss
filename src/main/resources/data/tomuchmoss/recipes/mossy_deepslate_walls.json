@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "tomuchmoss:mossy_deepslate"
+    }
+  },
+  "result": {
+    "item": "tomuchmoss:mosst_deepslate_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "block/block",
+  "loader": "forge:multi-layer",
+  "layers": {
+    "solid": {
+      "parent": "block/template_wall_post",
+      "textures": {
+        "wall": "block/deepslate"
+      }
+    },
+    "translucent": {
+      "parent": "block/template_wall_post",
+      "textures": {
+        "wall": "tomuchmoss:block/moss"
+      }
+    }
+  },
+  "textures": {
+    "particle" : "block/deepslate"
+  }
+}
