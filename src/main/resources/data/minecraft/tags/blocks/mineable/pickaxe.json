@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "tomuchmoss:mossy_deepslate",
-    "tomuchmoss:cobbled_mossy_deepslate"
+    "tomuchmoss:cobbled_mossy_deepslate",
+    "tomuchmoss:mossy_deepslate_slab",
+    "tomuchmoss:mossy_deepslate_stairs",
+    "tomuchmoss:mossy_deepslate_wall"
   ]
 }
