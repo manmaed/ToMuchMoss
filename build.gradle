@@ -74,8 +74,8 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf("curse.maven:${brp_slug}-${brp_pid}:${brp_fid}")
-    implementation fg.deobf("curse.maven:${jei_slug}-${jei_pid}:${jei_fid}")
+//    implementation fg.deobf("curse.maven:${brp_slug}-${brp_pid}:${brp_fid}")
+//    implementation fg.deobf("curse.maven:${jei_slug}-${jei_pid}:${jei_fid}")
     }
 
 // Example for how to get properties into the manifest for reading by the runtime..

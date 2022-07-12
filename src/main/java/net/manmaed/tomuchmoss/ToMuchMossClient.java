@@ -14,11 +14,5 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class ToMuchMossClient {
 
     public static void doClientSetup(FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(TMMBlocks.MOSSY_DEEPSLATE.get(), renderType -> renderType == RenderType.solid() || renderType == RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(TMMBlocks.COBBLED_MOSSY_DEEPSLATE.get(), renderType -> renderType == RenderType.solid() || renderType == RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(TMMBlocks.MOSSY_DEEPSLATE_SLAB.get(), renderType -> renderType == RenderType.solid() || renderType == RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(TMMBlocks.MOSSY_DEEPSLATE_STAIR.get(), renderType -> renderType == RenderType.solid() || renderType == RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(TMMBlocks.MOSSY_DEEPSLATE_WALL.get(), renderType -> renderType == RenderType.solid() || renderType == RenderType.translucent());
-
     }
 }

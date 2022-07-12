@@ -32,7 +32,6 @@ public class ToMuchMoss {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         TMMBlocks.BLOCKS.register(eventBus);
         TMMItems.ITEMS.register(eventBus);
-        eventBus.addListener(ToMuchMossClient::doClientSetup);
     }
 
 }

@@ -1,18 +1,20 @@
 {
   "parent": "block/block",
-  "loader": "forge:multi-layer",
-  "layers": {
-    "solid": {
+  "loader": "forge:composite",
+  "children": {
+    "first": {
       "parent": "block/template_wall_post",
       "textures": {
         "wall": "block/deepslate"
-      }
+      },
+      "render_type": "solid"
     },
-    "translucent": {
+    "second": {
       "parent": "block/template_wall_post",
       "textures": {
         "wall": "tomuchmoss:block/moss"
-      }
+      },
+      "render_type": "translucent"
     }
   },
   "textures": {
