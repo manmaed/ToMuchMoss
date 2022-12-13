@@ -39,6 +39,6 @@ public class TMMBlocks {
     private static final RegistryObject<Item> MOSSY_DEEPSLATE_WALL_ITEM = TMMItems.ITEMS.register("mossy_deepslate_wall", () -> makeBlockItem(MOSSY_DEEPSLATE_WALL.get()));
 
     private static BlockItem makeBlockItem(Block block) {
-        return new BlockItem(block, new Item.Properties().tab(ToMuchMoss.TAB));
+        return new BlockItem(block, new Item.Properties());
     }
 }

@@ -1,5 +1,5 @@
 modLoader="javafml" 
-loaderVersion="[43,)"
+loaderVersion="[44,)"
 license="All rights reserved"
 issueTrackerURL="https://github.com/manmaed/ToMuchMoss/issues" 
 [[mods]] 
@@ -16,6 +16,6 @@ Adds more moss coverd blocks'''
 [[dependencies.tomuchmoss]]
 modId="forge"
 mandatory=true
-versionRange="[43.1.0,)"
+versionRange="[44.0.18,)"
 ordering="NONE"
 side="BOTH"
